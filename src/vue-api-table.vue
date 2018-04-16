@@ -83,8 +83,13 @@
 		},
 
 		methods: {
-			fetch() {
-				let url = this.url + '?show=' + this.per_page +'&page=' + this.page;
+			fetch() {console.log(this.url.indexOf('?'));
+				if (this.url.indexOf('?') < 0) {
+					var url = this.url + '?show=' + this.per_page +'&page=' + this.page;
+				} else {
+					var url = this.url + '&show=' + this.per_page +'&page=' + this.page;
+				}
+
 				this.loaded = false;
 				this.data = [];
 
