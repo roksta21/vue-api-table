@@ -1,0 +1,24 @@
+{
+  "name": "vue-api-table",
+  "version": "1.0.0",
+  "description": "datatable for loading api requests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roksta21/vue-api-table.git"
+  },
+  "keywords": [
+    "vue js",
+    "js",
+    "datatable"
+  ],
+  "author": "sam_roksta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roksta21/vue-api-table/issues"
+  },
+  "homepage": "https://github.com/roksta21/vue-api-table#readme"
+}
