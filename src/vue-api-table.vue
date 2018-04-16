@@ -151,6 +151,12 @@
 			pages_count() {
 				return Math.ceil(this.total / this.per_page);
 			}
+		},
+
+		watch: {
+			url(newval, oldval) {
+				this.fetch();
+			}
 		}
 	}
 </script>
