@@ -93,7 +93,20 @@
 						let mapped = [];
 
 						this.the_mappings.forEach(column => {
-							mapped[column] = set[column];
+							let nestings = column.split('.');
+
+							if (nestings.length == 1) {
+								mapped[column] = set[nestings[0]];
+							}
+
+							if (nestings.length == 2) { 
+								mapped[column] = set[nestings[0]][nestings[1]];
+							}
+
+							if (nestings.length == 3) {
+								mapped[column] = set[nestings[0]][nestings[1]][nestings[2]];
+							}
+							
 						});
 
 						this.data.push(mapped);
